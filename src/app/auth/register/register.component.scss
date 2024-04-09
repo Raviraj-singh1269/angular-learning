@@ -1,0 +1,174 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font is loaded in your HTML */
+}
+
+/* Directly including font family in classes */
+.login-form-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    padding: 48px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+.social-login-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the space between buttons */
+    margin-bottom: 20px; /* Space before the form starts */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-button i { /* Icon size adjustment */
+    font-size: 20px;
+}
+
+.google {
+    background-color: #DB4437;
+}
+
+.facebook {
+    background-color: #4267B2;
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+
+.input-label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #344054;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dialog-title{
+    margin-left: 75px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    font-size: 14px;
+    font-weight: 400;
+    color: #344054;
+    font-family: 'Poppins', sans-serif;
+}
+
+.helper-text{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.input:focus {
+    border: 2px solid #D1E9FF; /* Adjusted for consistent focus outline */
+}
+
+.button {
+    width: 100%;
+    height: 52px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #1570EF;
+    border: none;
+    color: #FCFCFD;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.helper-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #98A2B3;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.forgot-password{
+    margin-left: 250px;
+}
+
+.forgot-password, .signup-link {
+    text-decoration: none;
+    color: #1570EF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px; /* Adjust this value to control spacing between fields */
+}
+
+
+.input-label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px; /* Space between label and input field */
+    color: #344054;
+    font-family: 'Poppins', sans-serif;
+}
+/* Theme-specific Styles */
+.light, .dark {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.light {
+    background-color: #050A24;
+    background-image: url('../../../assets/bg.png');
+}
+
+.dark {
+    background-color: #0A0A0A;
+    background-image: url('../../../assets/bgdarkbg.png');
+}
+
+.dark .login-form-dialog, .dark .input:focus {
+    background: #131316CC;
+}
+
+.dark .input-label, .dark .input, .dark .helper-text, .dark .forgot-password-link, .dark .signup-link, .dark .dialog-title {
+    color: #D1D1D6;
+}

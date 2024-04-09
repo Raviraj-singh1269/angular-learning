@@ -1,0 +1,28 @@
+<div [ngClass]="theme ? 'light' : 'dark'">
+    <div>
+        <button class="theme-toggle" (click)="onClick()">Change Theme</button>
+    </div>
+    <div class="login-form-dialog">
+        <h2 class="dialog-title">Login to your account</h2>
+        <form class="dialog-body">
+            <div class="field-wrapper">
+                <label class="input-label" for="email">Email</label>
+                <input class="input" placeholder="Enter your email" type="email" id="email" name="email" required>
+            </div>
+            <div class="field-wrapper">
+                <div class="label-container">
+                    <label class="input-label" for="password">Password</label>
+                    <a class="forgot-password" href="#">Forgot?</a>
+                </div>
+                <input class="input" placeholder="Enter your password" type="password" id="password" name="password" required>
+            </div>
+        </form>
+        <div class="dialog-footer">
+            <button class="button" type="submit">Login now</button>
+            <p class="helper-text">
+                Don't have an account?
+                <a class="signup-link" href="/signup">Sign Up</a>
+            </p>
+        </div>
+    </div>
+</div>
