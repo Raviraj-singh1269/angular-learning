@@ -1,0 +1,10 @@
+<section *ngFor="let user of users">
+    <h4>{{user.id}}</h4>
+    <p>{{user.name}}</p>
+    <p>{{user.city}}</p>
+</section>
+<section>
+    <div>
+        <button (click)="clickToNotify()">click me to increase notification count</button>
+    </div>
+</section>
