@@ -6,16 +6,18 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { PropsRoutingModule } from './props/props-routing.module';
 import { PropsModule } from './props/props.module';
+import { FormreactiveModule } from './formreactive/formreactive.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    PropsModule
+    PropsModule,
+    FormreactiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
