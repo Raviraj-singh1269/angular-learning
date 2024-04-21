@@ -1,0 +1,3 @@
+<!-- <app-child [users]="userList"></app-child> -->
+<app-child (onClickNotify) = "increaseCount($event)"></app-child>
+<div>Notified {{count}}</div>
