@@ -1,0 +1,14 @@
+<div class="card-container">
+    <div *ngFor="let user of users.users" class="card">
+      <div class="card-image">
+        <img src="{{ user.image }}" alt="Photo of {{ user.firstName }}">
+      </div>
+      <div class="card-body">
+        <h2>{{ user.firstName }} {{ user.lastName }}</h2>
+        <p>Email: {{ user.email }}</p>
+        <p>Username: {{ user.username }}</p>
+        <p>Phone: {{ user.phone }}</p>
+        <p>Birthdate: {{ user.birthDate | date }}</p>
+      </div>
+    </div>
+  </div>
