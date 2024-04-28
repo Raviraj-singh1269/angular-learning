@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
-import { PropsRoutingModule } from './props/props-routing.module';
 import { PropsModule } from './props/props.module';
+import { SevicedemoModule } from './sevicedemo/sevicedemo.module';
+import { HttpService } from './core/http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,11 @@ import { PropsModule } from './props/props.module';
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    PropsModule
+    PropsModule,
+    SevicedemoModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
